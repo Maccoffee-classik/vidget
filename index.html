@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="fonts/font.css" rel="stylesheet">
+	<title>Calmar</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg  fixed-top bg-purple">
+		<a class="nav-link" href="#">
+			<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12.6663 26.6669V18.3335H19.333V26.6669C19.333 27.5835 20.083 28.3335 20.9997 28.3335H25.9997C26.9163 28.3335 27.6663 27.5835 27.6663 26.6669V15.0002H30.4997C31.2663 15.0002 31.633 14.0502 31.0497 13.5502L17.1163 1.0002C16.483 0.433529 15.5163 0.433529 14.883 1.0002L0.949675 13.5502C0.383009 14.0502 0.733008 15.0002 1.49968 15.0002H4.33301V26.6669C4.33301 27.5835 5.08301 28.3335 5.99968 28.3335H10.9997C11.9163 28.3335 12.6663 27.5835 12.6663 26.6669Z"
+					fill="#FCFCFC" />
+			</svg>
+
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+			aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+				<li class="nav-item active">
+					<a class="navbar-brand" href="#">
+						<img class="logo" src="img/logo.png" alt="logo">
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Звонки</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Виджеты</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Статистика</a>
+				</li>
+
+
+
+			</ul>
+
+		</div>
+
+	</nav>
+
+	<main class="content-wrapper">
+		<div class="container">
+			<div class="navbar-right">
+
+				<div class="login">
+					<div class="login-mail">Вы вошли как groupsh@yandex.ru </div>
+					<button class="loguot-button">Выйти</button>
+				</div>
+				<div class="payment">
+					<div class="payment-info">Баланс
+						<span class="balance-time">13 мин.</span>
+						до
+						<span class="balance-date">12.11.21</span>
+					</div>
+					<div class="payment-button payment-button__top">Оплатить</div>
+				</div>
+			</div>
+
+			<div class="vidget-up">
+				<div class="row vidget-up__wrapper">
+					<div class="col-5 col-lg-2">
+						<div class="vidget-up__text">Виджеты</div>
+					</div>
+					<div class="col-7 col-md-4 col-lg-4 col-xl-3">
+						<button class="vidget-up__button">
+							<svg class="vidget-up__ico" width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="9" width="4" height="22" fill="white" />
+								<rect y="13" width="4" height="22" transform="rotate(-90 0 13)" fill="white" />
+							</svg>
+
+
+							Добавить виджет</button>
+					</div>
+				</div>
+			</div>
+
+
+			<table class="table table-responsive">
+				<thead>
+					<tr>
+
+						<th class="col-site-title" scope="col">Сайт</th>
+						<th class="col-status-title" scope="col">Статус установки</th>
+						<th class="col-settings-title" scope="col">Настройки</th>
+						<th class="col-on-off-title" scope="col">Вкл./выкл. виджет</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+
+
+						<td class="col-site">tehnix.su</td>
+						<td class="col-status">
+							<div class="kod-status">
+								<svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M18.0191 2.10502L15.9141 0L6.34024 9.57385L2.10502 5.33863L0 7.44365L6.38207 13.8257L8.48709 11.7207L8.44526 11.6789L18.0191 2.10502Z"
+										fill="white" />
+								</svg>
+								Код установлен</div>
+							<button class="btn-kod-cheked">
+								<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.7025 11.0607C13.5194 9.9155 14 8.51389 14 7C14 3.134 10.866 0 7 0C3.13403 0 0 3.134 0 7C0 10.866 3.13403 14 7 14C8.51984 14 9.92657 13.5156 11.0742 12.6928L16.2414 18.8463L18.0001 17.3695L12.7025 11.0607ZM7 12.1067C4.17969 12.1067 1.89331 9.82034 1.89331 7C1.89331 4.17966 4.17969 1.89331 7 1.89331C9.82031 1.89331 12.1067 4.17966 12.1067 7C12.1067 9.82034 9.82031 12.1067 7 12.1067Z"
+										fill="#4B4B4B" />
+								</svg>
+								Проверить код на сайте</button>
+						</td>
+						<td class="col-settings">
+							<button class="bth-vidget-setting">
+								<svg class="ico-vidget-setting" width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15.9497 10.7833C15.9831 10.5333 15.9997 10.275 15.9997 10C15.9997 9.73334 15.9831 9.46667 15.9414 9.21667L17.6331 7.9C17.706 7.83992 17.7558 7.75642 17.774 7.66372C17.7922 7.57103 17.7778 7.47489 17.7331 7.39167L16.1331 4.625C16.086 4.54131 16.0107 4.47698 15.9207 4.44343C15.8308 4.40987 15.7318 4.40925 15.6414 4.44167L13.6497 5.24167C13.2331 4.925 12.7914 4.65834 12.2997 4.45834L11.9997 2.34167C11.985 2.24628 11.9365 2.15934 11.8631 2.09665C11.7897 2.03396 11.6963 1.99967 11.5997 2H8.39973C8.19973 2 8.04139 2.14167 8.00806 2.34167L7.70806 4.45834C7.21639 4.65834 6.76639 4.93334 6.35806 5.24167L4.36639 4.44167C4.18306 4.375 3.97473 4.44167 3.87473 4.625L2.28306 7.39167C2.18306 7.56667 2.21639 7.78334 2.38306 7.9L4.07473 9.21667C4.03306 9.46667 3.99973 9.74167 3.99973 10C3.99973 10.2583 4.01639 10.5333 4.05806 10.7833L2.36639 12.1C2.2935 12.1601 2.24369 12.2436 2.22545 12.3363C2.20722 12.429 2.22169 12.5251 2.26639 12.6083L3.86639 15.375C3.96639 15.5583 4.17473 15.6167 4.35806 15.5583L6.34973 14.7583C6.76639 15.075 7.20806 15.3417 7.69973 15.5417L7.99973 17.6583C8.04139 17.8583 8.19973 18 8.39973 18H11.5997C11.7997 18 11.9664 17.8583 11.9914 17.6583L12.2914 15.5417C12.7831 15.3417 13.2331 15.075 13.6414 14.7583L15.6331 15.5583C15.8164 15.625 16.0247 15.5583 16.1247 15.375L17.7247 12.6083C17.8247 12.425 17.7831 12.2167 17.6247 12.1L15.9497 10.7833ZM9.99972 13C8.34973 13 6.99973 11.65 6.99973 10C6.99973 8.35 8.34973 7 9.99972 7C11.6497 7 12.9997 8.35 12.9997 10C12.9997 11.65 11.6497 13 9.99972 13Z"
+										fill="white" />
+								</svg>
+								Настройки</button>
+						</td>
+						<td class="col-on-off">
+							<div class="vidget-on-off__wrapper">
+								<div class="vidget-on-off">
+
+									Включен</div>
+								<label class="switch">
+									<input style="margin-left:10px" type="checkbox">
+									<span class="slider round">ON</span>
+								</label>
+
+
+							</div>
+
+						</td>
+
+					</tr>
+
+				</tbody>
+			</table>
+
+
+
+
+
+		</div>
+	</main>
+
+	<script src="js/main.js" defer=""> </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="js/bootstrap.min.js" defer=""> </script>
+	<script>
+		$(document).ready(function () {
+			$('.nav-link-collapse').on('click', function () {
+				$('.nav-link-collapse').not(this).removeClass('nav-link-show');
+				$(this).toggleClass('nav-link-show');
+			});
+		});
+	</script>
+</body>
+
+</html>
