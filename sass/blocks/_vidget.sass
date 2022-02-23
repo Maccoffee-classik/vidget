@@ -75,24 +75,24 @@ body
 
 /*dвиджет добавл*/
 .vidget-up
-	align-items: center
+
 	.row
+		align-items: center
 		margin: 0
-	.col-5, .col-7, .col-lg-2, .col-md-4, .col-lg-4, .col-xl-3
+	.col-5, .col-7, .col-sm-4, .col-lg-2, .col-md-4, .col-lg-5, .col-xl-4, .co-lg-2
 		padding: 0
 		align-items: center
 	&__text
 		font-size: 3.333vh
 		font-weight: 700
 	&__button
-		max-width: 275px
-		width: 100%
+		align-items: center
 		background: $bg-color-red
 		color: $text-w
 		border-radius: 5px
 		font-size: 23px
 		font-weight: 700
-		padding: 1.481vh 0
+		padding: 1.481vh 20px
 		border: none
 		cursor: pointer
 		&:hover
@@ -101,13 +101,17 @@ body
 			fill: $text-w-hov
 		@media (max-width: 992px)
 			font-size: 2.222vh
-			padding: 1.481vh 1.042vw
+			padding: 1.481vh 20px
+		@media (max-width: 576px)
+			display: flex
+			margin-left: auto
 
 	&__ico
 		margin-right: 10px
-		rect
-			&:hover
-				fill: $text-w-hov
+		@media (max-width: 992px)
+			width: 15px
+			height: 15px
+
 .switch
 	position: relative
 	display: inline-block
@@ -177,6 +181,8 @@ input:checked + .slider:before
 	margin-top: 1vh
 	cursor: pointer
 .bth-vidget-setting
+	display: flex
+	margin: auto
 	background: $bg-color-red
 	border-radius: 5px
 	color: $text-w
@@ -190,6 +196,9 @@ input:checked + .slider:before
 	vertical-align: sub
 .site-name
 	font-size: 18px
+	font-weight: 400
+	@media (max-width: 576px)
+		padding-right: 30px
 
 .vidget-on-off
 	height: 29px
@@ -206,15 +215,21 @@ input:checked + .slider:before
 .col-site-title, .col-status-title, .col-settings-title, .col-on-off-title
 	text-align: center
 
+.table td, .table th
+	vertical-align: middle
 .col-site
 	width: 14.6%
+	height: 0!important
 
 .col-status
 	width: 26.2%
+	height: 0!important
 .col-settings
 	width: 25.2%
+	height: 0!important
 .col-on-off
 	width: 33.1%
+	height: 0!important
 
 @media (min-width: 992px)
 	.sidenav
@@ -305,6 +320,7 @@ input:checked + .slider:before
 		padding-left: 14.615vw
 		padding-right: 14.615vw
 table.table tbody tr td
+	border-bottom: 2px solid #D6D6D6
 	border-left: 2px solid #D6D6D6
 	border-right: 2px solid #D6D6D6
 	background: #EEEEEE

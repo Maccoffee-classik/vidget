@@ -165,15 +165,12 @@ body {
 }
 
 /*dвиджет добавл*/
-.vidget-up {
-  align-items: center;
-}
-
 .vidget-up .row {
+  align-items: center;
   margin: 0;
 }
 
-.vidget-up .col-5, .vidget-up .col-7, .vidget-up .col-lg-2, .vidget-up .col-md-4, .vidget-up .col-lg-4, .vidget-up .col-xl-3 {
+.vidget-up .col-5, .vidget-up .col-7, .vidget-up .col-sm-4, .vidget-up .col-lg-2, .vidget-up .col-md-4, .vidget-up .col-lg-5, .vidget-up .col-xl-4, .vidget-up .co-lg-2 {
   padding: 0;
   align-items: center;
 }
@@ -184,14 +181,13 @@ body {
 }
 
 .vidget-up__button {
-  max-width: 275px;
-  width: 100%;
+  align-items: center;
   background: #D75C78;
   color: #FFFFFF;
   border-radius: 5px;
   font-size: 23px;
   font-weight: 700;
-  padding: 1.481vh 0;
+  padding: 1.481vh 20px;
   border: none;
   cursor: pointer;
 }
@@ -207,7 +203,14 @@ body {
 @media (max-width: 992px) {
   .vidget-up__button {
     font-size: 2.222vh;
-    padding: 1.481vh 1.042vw;
+    padding: 1.481vh 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .vidget-up__button {
+    display: flex;
+    margin-left: auto;
   }
 }
 
@@ -215,8 +218,11 @@ body {
   margin-right: 10px;
 }
 
-.vidget-up__ico rect:hover {
-  fill: #FFD9D9;
+@media (max-width: 992px) {
+  .vidget-up__ico {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .switch {
@@ -296,6 +302,8 @@ input:checked + .slider:before {
 }
 
 .bth-vidget-setting {
+  display: flex;
+  margin: auto;
   background: #D75C78;
   border-radius: 5px;
   color: #FFFFFF;
@@ -313,6 +321,13 @@ input:checked + .slider:before {
 
 .site-name {
   font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .site-name {
+    padding-right: 30px;
+  }
 }
 
 .vidget-on-off {
@@ -335,20 +350,28 @@ input:checked + .slider:before {
   text-align: center;
 }
 
+.table td, .table th {
+  vertical-align: middle;
+}
+
 .col-site {
   width: 14.6%;
+  height: 0 !important;
 }
 
 .col-status {
   width: 26.2%;
+  height: 0 !important;
 }
 
 .col-settings {
   width: 25.2%;
+  height: 0 !important;
 }
 
 .col-on-off {
   width: 33.1%;
+  height: 0 !important;
 }
 
 @media (min-width: 992px) {
@@ -475,6 +498,7 @@ input:checked + .slider:before {
 }
 
 table.table tbody tr td {
+  border-bottom: 2px solid #D6D6D6;
   border-left: 2px solid #D6D6D6;
   border-right: 2px solid #D6D6D6;
   background: #EEEEEE;
